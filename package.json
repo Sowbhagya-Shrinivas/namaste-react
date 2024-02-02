@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "this is namaste react by sowbhagya",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -24,7 +26,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "browserslist" :[
+  "browserslist": [
     "last 2 versions"
   ]
 }

@@ -1,18 +1,27 @@
-import  ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import React from "react";
 
-const heading = React.createElement("h1", { id: "heading" }, "Hello World! from React");
-console.log(heading);
+//React Element
+const heading = (
+  <h1 className="head" tabIndex="5">
+    Namaste React using JSX
+  </h1>
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);
 
-//React.createElement is a javascript object
-//render converting h1 object and put it in DOM
-
-const parent = React.createElement("div", { id: "parent" },
-    React.createElement("div", { id: "child" },
-        [React.createElement("h1", {}, "Nested Structure in React"),
-         React.createElement("h1",{},"Array of Element for the same level")],
-    )
+//React Functional Component - return some JSX element
+const Title = () => (
+  <h1 className="head" tabIndex="5">
+    Namster React using JSX
+  </h1>
 );
-root.render(parent);
+//Component Composition = Component inside Component
+const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+    {Title()}
+    <h1>Namaste React Functional Component</h1>
+  </div>
+);
+root.render(<HeadingComponent/>);
