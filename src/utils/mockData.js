@@ -48,11 +48,22 @@ const restaurantList = [
           id : 5,
           name: "Lavonne",
           cuisins: ["Bakery", "Desserts"],
-          avgRating: 4.5,
+          avgRating: 4.0,
           costForTwo: 50000,
           deliveryTime: 20,
           cloudinaryImgId: "udzufnegmtvimdypnfbk",
         },
       },
+      {
+        data:{
+          id : 6,
+          name : "McDonalds",
+          cuisins:["Burgers","Beverages"],
+          avgRating : 3.9,
+          costForTwo : 20000,
+          deliveryTime : 40 ,
+          cloudinaryImgId: "03501c33ecb3a3105124441e541e6fe4",
+        }
+      }
   ];
   export default restaurantList;

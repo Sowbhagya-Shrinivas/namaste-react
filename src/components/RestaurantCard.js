@@ -9,7 +9,7 @@ const RestaurantCard = (props) => {
             alt="res-logo" src={MEDIA_URL+cloudinaryImgId}/>
             <h3>{name}</h3>
             <h4>{cuisins.join(", ")}</h4>
-            <h4>{avgRating}stars</h4>
+            <h4>{avgRating} stars</h4>
             <h4> {costForTwo / 100}</h4>
             <h4> {deliveryTime} minutes</h4>
         </div>

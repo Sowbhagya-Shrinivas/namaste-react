@@ -51,6 +51,7 @@
  *     - Contact
  */
 
+# Episode 5
  # Two Types of Export/Import
  - Default Export / Import
     - export default Component;
@@ -59,3 +60,8 @@
  - Named Export/Import
     - export const Component;
     - import {Component} from "path";
+ # React Hooks
+   - useState() - Superpowerful State Variables and maintains state of component i.e update in UI
+   - Imp : whenever state variable updates/changes, react re-renders the component
+   - useEffect()
+   -  Important : React makes DOM operations superfast, that's y react appln are fast
