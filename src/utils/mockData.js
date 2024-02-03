@@ -7,7 +7,7 @@ const restaurantList = [
         avgRating: 4.5,
         costForTwo: 40000,
         deliveryTime: 38,
-        cloudinaryImgId: "b15a2367ff3d6f0bf92d1def3c1e5c59",
+        cloudinaryImageId: "b15a2367ff3d6f0bf92d1def3c1e5c59",
       },
     },
     {
@@ -18,7 +18,7 @@ const restaurantList = [
         avgRating: 4.4,
         costForTwo: 40000,
         deliveryTime: 38,
-        cloudinaryImgId: "o8t0w5gdlujpigauaflw",
+        cloudinaryImageId: "o8t0w5gdlujpigauaflw",
       },
     },
     {
@@ -29,7 +29,7 @@ const restaurantList = [
         avgRating: 4.3,
         costForTwo: 50000,
         deliveryTime: 40,
-        cloudinaryImgId: "dtcwa1rxdskp3crqvpr3",
+        cloudinaryImageId: "dtcwa1rxdskp3crqvpr3",
       },
     },
     {
@@ -40,7 +40,7 @@ const restaurantList = [
         avgRating: 4.5,
         costForTwo: 50000,
         deliveryTime: 30,
-        cloudinaryImgId: "tfbnpd65irvhp9iwhbtk",
+        cloudinaryImageId: "tfbnpd65irvhp9iwhbtk",
       },
     },
     {
@@ -51,7 +51,7 @@ const restaurantList = [
           avgRating: 4.0,
           costForTwo: 50000,
           deliveryTime: 20,
-          cloudinaryImgId: "udzufnegmtvimdypnfbk",
+          cloudinaryImageId: "udzufnegmtvimdypnfbk",
         },
       },
       {
@@ -62,7 +62,7 @@ const restaurantList = [
           avgRating : 3.9,
           costForTwo : 20000,
           deliveryTime : 40 ,
-          cloudinaryImgId: "03501c33ecb3a3105124441e541e6fe4",
+          cloudinaryImageId: "03501c33ecb3a3105124441e541e6fe4",
         }
       }
   ];

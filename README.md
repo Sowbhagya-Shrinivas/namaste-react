@@ -62,6 +62,12 @@
     - import {Component} from "path";
  # React Hooks
    - useState() - Superpowerful State Variables and maintains state of component i.e update in UI
-   - Imp : whenever state variable updates/changes, react re-renders the component
+   - Imp : whenever state variable updates/changes, react re-renders the component i.e it triggers reconciliation cycle
    - useEffect()
    -  Important : React makes DOM operations superfast, that's y react appln are fast
+
+# Episode 6
+-  Microservices discussion
+-  API calls
+- useEffect() hook - it will be called after component renders.if we want to perform any task after rendering component then we have to write in useEffect() hook
+- shimmer UI - for loading fake page till we get actual data
