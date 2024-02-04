@@ -92,3 +92,8 @@
       - componentDidupdate()
    - UnMounting
       - once the page exists it will call
+# Episode 9
+- creating customHooks
+- bundler
+- Chunking also known as CodeSplitting,Dynamicbundling,LazyLoading,OnDemandLoading,dynamic import
+- different bundles for grocery and restaurant
