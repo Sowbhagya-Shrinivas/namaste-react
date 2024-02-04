@@ -71,3 +71,8 @@
 -  API calls
 - useEffect() hook - it will be called after component renders.if we want to perform any task after rendering component then we have to write in useEffect() hook
 - shimmer UI - for loading fake page till we get actual data
+
+# Episode 8
+- 2 types of Routing:
+    - Client Side Routing
+    - Server Side Routing
