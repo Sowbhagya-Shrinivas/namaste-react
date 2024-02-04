@@ -28,3 +28,22 @@ const jsxHeading = <h1 id="heading"> Namaste React using JSX</h1>;
 console.log(jsxHeading);
 root.render(jsxHeading);
 
+
+
+//class Component
+// this.state= {
+//     count : 0,
+//     count2 : 2,
+// }
+{/* <h1>Count : {count}</h1>
+        <button
+          onClick={() => {
+            //never update state variable directly
+            this.setState({
+              count: this.state.count + 1,
+            });
+          }}
+        >
+          Count Increase
+        </button> */}
+
