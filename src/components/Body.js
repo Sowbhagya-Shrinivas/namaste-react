@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withPromotedLabel,withOpenCloseLabel} from "./RestaurantCard";
 import restaurantList from "../utils/mockData";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
@@ -12,6 +12,9 @@ const Body = () => {
   const [listOfRestaurants, setListOfRestaurant] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText,setSearchText] = useState("");
+
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
+  const RestaurantOpenClose = withOpenCloseLabel(RestaurantCard);
 
   useEffect(() => {
     fetchData();
@@ -64,7 +67,7 @@ const Body = () => {
             Search
           </button>
         </div>
-        <div class="search m-4 p-4 flex items-center">
+        <div className="search m-4 p-4 flex items-center">
           <button
             className="px-4 py-2 bg-gray-100 rounded-lg"
             onClick={() => {
@@ -85,7 +88,11 @@ const Body = () => {
             key={restaurants?.info.id}
             to={"/restaurants/" + restaurants?.info.id}
           >
-            <RestaurantCard resData={restaurants?.info} />
+            {restaurants?.info.promoted? (
+              <RestaurantCardPromoted resData={restaurants?.info} />
+            ) : (
+              <RestaurantCard resData={restaurants?.info} />
+            )}
           </Link>
         ))}
       </div>

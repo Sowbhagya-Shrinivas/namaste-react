@@ -100,3 +100,9 @@
 
 # Episode 10
 - css framework : Material UI, Chakra UI, Ant UI, Bootstrap, tailwind css
+
+# Episode 11
+- Higher Order Component - takes comp as input and enhances component and r  
+  returns new component
+- implementing accordians
+- controlled and uncontrolled component
