@@ -97,3 +97,6 @@
 - bundler
 - Chunking also known as CodeSplitting,Dynamicbundling,LazyLoading,OnDemandLoading,dynamic import
 - different bundles for grocery and restaurant
+
+# Episode 10
+- css framework : Material UI, Chakra UI, Ant UI, Bootstrap, tailwind css
