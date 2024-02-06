@@ -105,4 +105,7 @@
 - Higher Order Component - takes comp as input and enhances component and r  
   returns new component
 - implementing accordians
-- controlled and uncontrolled component
+- controlled and uncontrolled component 
+- Lifting State up
+- props drilling
+- useContext - solves the problem of props drilling

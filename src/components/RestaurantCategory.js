@@ -1,11 +1,11 @@
 import { useState } from "react";
 import ItemList from "./ItemList";
-const RestaurantCategory = ({ data, showItems ,setShowIndex}) => {
+const RestaurantCategory = ({ data, showItems ,setShowIndex,dummy, activeIndex}) => {
   //const [showItems, setShowItems] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = (index) => {
     //setShowItems(!showItems);
-    setShowIndex();
+    setShowIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
@@ -17,7 +17,7 @@ const RestaurantCategory = ({ data, showItems ,setShowIndex}) => {
       >
         <div
           className="flex justify-between cursor-pointer"
-          onClick={handleClick}
+          onClick={() => handleClick(activeIndex)}
         >
           <span className=" font-bold text-md">
             {data.title} ({data.itemCards.length})
@@ -25,7 +25,7 @@ const RestaurantCategory = ({ data, showItems ,setShowIndex}) => {
           <span>🔽</span>
         </div>
         {/**Accordian Body */}
-        {showItems && <ItemList items={data.itemCards} />}
+        {showItems && <ItemList items={data.itemCards} dummy={dummy}/> }
       </div>
     </div>
   );

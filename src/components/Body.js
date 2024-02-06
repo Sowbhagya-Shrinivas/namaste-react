@@ -1,9 +1,10 @@
 import RestaurantCard, {withPromotedLabel,withOpenCloseLabel} from "./RestaurantCard";
 import restaurantList from "../utils/mockData";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   //Normal Js variable
@@ -37,6 +38,8 @@ const Body = () => {
   if(!onlineStatus){
     return <h1>Looks like you are offline!!! Please check your internet connection</h1>
   }
+
+  const {setUserInfo, loggedInUser} = useContext(UserContext);
 
   return listOfRestaurants.length === 0 ? (
     <Shimmer />
@@ -81,6 +84,14 @@ const Body = () => {
             Top Rated Restaurants
           </button>
         </div>
+        <div className="serch m-4 p-4 flex items-center">
+          <label>UserName </label>
+          <input
+            className="border border-black p-2"
+            value={loggedInUser}
+            onChange={(e) => setUserInfo(e.target.value)}
+          />
+        </div>
       </div>
       <div className="flex flex-wrap">
         {filteredRestaurant.map((restaurants) => (
@@ -88,7 +99,7 @@ const Body = () => {
             key={restaurants?.info.id}
             to={"/restaurants/" + restaurants?.info.id}
           >
-            {restaurants?.info.promoted? (
+            {restaurants?.info.promoted ? (
               <RestaurantCardPromoted resData={restaurants?.info} />
             ) : (
               <RestaurantCard resData={restaurants?.info} />

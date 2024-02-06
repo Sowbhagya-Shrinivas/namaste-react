@@ -1,6 +1,6 @@
 import { MEDIA_URL } from "../utils/constants";
 
-const ItemList = ({ items }) => {
+const ItemList = ({ items}) => {
   console.log(items);
   return (
     <div>
