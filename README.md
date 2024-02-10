@@ -109,3 +109,17 @@
 - Lifting State up
 - props drilling
 - useContext - solves the problem of props drilling
+
+# Episode 12
+- redux toolkit = offers great solution of handling data etc for large application
+- zustand
+- steps: 
+   - Install @reduxjs/toolkit and react-redux
+   - build our store
+   - connect our store to our app
+   - Slice(cartSlice)
+   - dispatch(action)
+   - Selector
+- Immer liberary used by redux
+- redux devtools
+- RTK Query - redux toolkit
