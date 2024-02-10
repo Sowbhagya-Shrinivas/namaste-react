@@ -1,0 +1,4 @@
+# put all the files / folder which should not go to prod and git
+/node_modules
+/.parcel-cache
+/dist
