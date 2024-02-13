@@ -14,6 +14,8 @@ const Body = () => {
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText,setSearchText] = useState("");
 
+  console.log("listOfRestaurants",listOfRestaurants);
+
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
   const RestaurantOpenClose = withOpenCloseLabel(RestaurantCard);
 
@@ -49,6 +51,7 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
+            data-testid = "searchInput"
             className="border border-solid border-black"
             value={searchText}
             onChange={(e) => {

@@ -138,4 +138,14 @@
    - install bbel dependencies
    - configure babel
    - config parcel config file to disable default babel transpilation(https://parceljs.org/languages/javascript/#babel)
+   - Jest Configuration (npx jest --init)
+   - install jsdom liberary
+   - install @babel/preset-react - to make JSX work in test cases
+   - include @babel/preset-react inside babel config
+   - install @testing-library/jest-dom
 - Parcel documentation read
+- Jsdom = env to run test cases and executed
+- "watch-test": "jest --watch" automatically run test cases without using npm run test again and again
+
+
+- _ and _ known as dunder
